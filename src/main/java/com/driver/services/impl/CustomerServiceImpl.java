@@ -54,7 +54,7 @@ public class CustomerServiceImpl implements CustomerService {
 		for (Driver driver1 : driverList){
 
 			//finding if driver is available or not
-			if(driver1.getCab().isAvailable() == Boolean.TRUE){
+			if(driver1.getCab().getAvailable() == Boolean.TRUE){
 				if(driver == null || driver.getDriverId()>driver1.getDriverId()){
 					driver = driver1;
 				}
