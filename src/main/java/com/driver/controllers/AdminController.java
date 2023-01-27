@@ -37,13 +37,13 @@ public class AdminController {
 
 	@GetMapping("/listOfCustomers")
 	public List<Customer> listOfCustomers() {
-		List<Customer> listOfCustomers = null;
-		return listOfCustomers;
+//		List<Customer> listOfCustomers = null;
+		return adminService.getListOfCustomers();
 	}
 
 	@GetMapping("/listOfDrivers")
 	public List<Driver> listOfDrivers() {
-		List<Driver> listOfDrivers = null;
-		return listOfDrivers;
+		//List<Driver> listOfDrivers = null;
+		return adminService.getListOfDrivers();
 	}
 }
